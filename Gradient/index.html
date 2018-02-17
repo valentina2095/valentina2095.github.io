@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gradient Background</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="gradient.css">
+</head>
+
+<body id="gradient">
+  <h1>Background Generator</h1>
+  <h2>Choose two colors to set the background.</h2>
+<div>
+  <input oninput="colorChange()" class="color1" type="color" name="color1" value=#c265d2>
+  <input oninput="colorChange()" class="color2" type="color" name="color2" value=#ffe3e3>
+</div>
+
+  <button onclick="getRandomColor()" type="button" name="button">Random colors</button>
+
+  <h3>Current CSS Background:</h3>
+  <h3 id="current">
+    #c265d2, #ffe3e3
+  </h3>
+  <h3 id="line">  </h3>
+
+  <footer>
+    <a href="CodeSchool/index.html">My portfolio</a>
+  </footer>
+
+  <script type="text/javascript"  src="gradient.js"></script>
+</body>
+</html>
