@@ -9,6 +9,10 @@ h1 {
   font-family: Raleway;
 }
 
+.profile {
+  text-align:center;
+}
+
 #header {
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +20,7 @@ h1 {
 }
 
 #content {
-  margin-left: 42px; 
+  margin-left: 42px;
 }
 
 #picture {
