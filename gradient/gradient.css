@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|VT323');
+
 body {
-  font-family: 'Open serif', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
   background: linear-gradient(to right, rgb(194, 101, 210), rgb(255, 227, 227));
 }
