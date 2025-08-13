@@ -2,27 +2,78 @@ body {
   background: radial-gradient(ellipse, #1b2735 0%, #090a0f 100%);
   font-family: 'Open Sans', sans-serif;
   color: #FFF;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-  font-size: 32px;
-  font-family: Raleway;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.profile {
-  text-align:center;
+h2.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+ul {
+  padding-left: 1.2em;
 }
 
 #header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: rgba(0,0,0,0.3);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.profile img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.social a {
+  margin: 0 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-block;
+}
+.social a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 2px 8px #fff2;
 }
 
 #content {
-  margin-left: 42px;
+  margin-top: 32px;
+  margin-left: 0;
 }
 
-#picture {
-  border-radius: 25px;
+.btn-outline-light {
+  border-radius: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-outline-light:hover {
+  background: #fff;
+  color: #1b2735;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  .about, .profile {
+    width: 100%;
+    max-width: 500px;
+  }
 }
