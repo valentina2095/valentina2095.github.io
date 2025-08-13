@@ -31,6 +31,9 @@ ul {
   background: rgba(0,0,0,0.3);
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  padding: 2.5rem 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .profile img {
@@ -65,15 +68,29 @@ ul {
   color: #1b2735;
 }
 
+.about {
+  padding-right: 2rem;
+}
+
+.profile {
+  padding-left: 2rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   #header {
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
   .about, .profile {
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .about {
+    margin-bottom: 2rem;
   }
 }
